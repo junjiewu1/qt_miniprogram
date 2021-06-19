@@ -1,0 +1,106 @@
+// pages/analysis/users.js
+import {AnalysisRequest} from "../../network/analysis";
+var app = getApp();
+
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    tagged:null,
+    untagged:null
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    wx.showLoading()
+    var qid = options.qid
+    var file = options.file
+    AnalysisRequest.importUsers(file, qid, app.globalData.token)
+    .then(res=>{
+      wx.hideLoading()
+      var data = JSON.parse(res.data)
+      // res.data.untagged.forEach(item => {
+        console.log(data)
+        this.setData({
+          tagged:data.tagged,
+          untagged:data.untagged
+        })
+      // });
+    })
+    .catch(err=>{
+      wx.hideLoading()
+      wx.showToast({
+        title: '识别失败，即将返回'
+      })
+      setTimeout(()=>{
+        wx.navigateBack()
+      },2000)
+    })
+    // AnalysisRequest.groupList(qid, app.globalData.token)
+    // .then(res=>{
+    //   var data = res.data
+    //   var tagged = '';
+    //   data.tagged.forEach(item=>{
+    //     tagged += item + " "
+    //   })
+    //   var untagged = '';
+    //   data.untagged.forEach(item=>{
+    //     untagged += item + " "
+    //   })
+    //   this.setData({tagged: tagged, untagged: untagged})
+    // })
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
+})

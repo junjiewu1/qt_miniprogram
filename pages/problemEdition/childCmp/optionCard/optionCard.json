@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "i-icon": "/components/iViewUi/icon/index",
+    "base-card": "/components/baseCard/baseCard",
+    "i-input": "/components/iViewUi/input/index",
+    "van-dialog": "/components/dialog/index"
+  }
+}

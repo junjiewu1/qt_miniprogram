@@ -1,0 +1,60 @@
+page {
+    background-color: #F5F6FA
+}
+.questionnaire-a{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30rpx;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.aaa{
+    color: #86878B;
+    font-size: 25rpx;
+}
+.questionnaire-title {
+    padding-left: 30rpx;
+    padding-top: 30rpx;
+    color: #86878B;
+    font-size: 25rpx;
+}
+.wjst{
+    color: black;
+    font-size: 25rpx;
+}
+.rightClass{
+    width: 10px;
+    height: 10px;
+    margin-left: 2px;
+}
+.basic-info-container {
+    padding-top: 30rpx;
+}
+
+.problems-container {
+    padding-top: 30rpx;
+}
+
+.add-problem-message {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.add-problem-message-text {
+    height: 50rpx;
+    font-size: 30rpx;
+    color: #368DFF;
+}
+
+.problems-container-items {
+    padding-top: 4rpx;
+}
+
+.problems-container-add-problem {
+    padding-top: 4rpx;
+}

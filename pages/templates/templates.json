@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "item-card": "/pages/templates/childCmp/itemCard/itemCard",
+    "van-search": "../../components/search/index",
+    "van-dialog": "/components/dialog/index",
+    "i-message": "/components/iViewUi/message/index"
+  }
+}

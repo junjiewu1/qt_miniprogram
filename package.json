@@ -1,0 +1,19 @@
+{
+  "name": "qt_miniprogram",
+  "version": "1.0.0",
+  "description": "#### 此项目是问卷调查平台的小程序端项目",
+  "main": "app.js",
+  "dependencies": {
+    "@vant/weapp": "^1.6.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@dragto.cn:/home/git/repositories/qt_miniprogram"
+  },
+  "author": "",
+  "license": "ISC"
+}

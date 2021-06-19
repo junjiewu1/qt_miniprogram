@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "basic-info": "../../components/basicInfo/basicInfo",
+    "problem-card": "childCmp/problemCard/problemCard",
+    "i-icon": "/components/iViewUi/icon/index",
+    "i-action-sheet": "/components/iViewUi/action-sheet/index",
+    "i-message": "/components/iViewUi/message/index",
+    "i-button": "/components/iViewUi/button/index",
+    "i-tag": "/components/iViewUi/tag/index"
+  }
+}

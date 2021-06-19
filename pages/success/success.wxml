@@ -1,0 +1,37 @@
+<view class="success">
+    <view class="success-title">
+        <view>提交成功</view>
+
+        <button 
+                wx:if="{{suc_options.resultControl=='true'}}"
+                class="checkup-button"
+                bind:tap="gotoCheckUp">
+            查看问卷统计
+        </button>
+        <button 
+                type="primary"
+                class="checkup-button"
+                bind:tap="gotoReview">
+            查看我的答卷
+        </button>
+        <button 
+                class="checkup-button"
+                open-type="share">
+            分享此问卷
+        </button>
+
+        <button 
+                class="back-button"
+                bind:tap="gotoHome">
+            返回首页
+        </button>
+
+        <view class="github-img-wrap">
+            <view class="adContainer">
+            <uad unitid="xxxx"></uad>
+            </view>
+            <image src="/assets/image/logo.png" mode="widthFix" class="github-img"/>
+            <view class="github-img-text">问卷调查投票就用云中问卷</view>
+        </view>
+    </view>
+</view>

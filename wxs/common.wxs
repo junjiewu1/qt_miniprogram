@@ -1,0 +1,34 @@
+function getProblemTypeChineseName(type) {
+  var problemTypeChineseNameMap = {
+    "SINGLE_SELECT": "单选题",
+    "MULTIPLY_SELECT": "多选题",
+    "BLANK_FILL": "填空题",
+    "DROP_DOWN": "下拉题",
+    "SCORE": "评价题"
+  };
+  return problemTypeChineseNameMap[type];
+}
+
+// 适配饼图
+function getDataDict(resolutions) {
+  var list = [];
+  for (var i = 0; i < resolutions.length; i++) {
+    if (!resolutions[i].resolution) continue;
+    list.push({
+      value: resolutions[i].resolution,
+      name: resolutions[i].title
+    })
+  }
+  return list
+}
+
+
+function isShowOptions(type) {
+  return type === 'SINGLE_SELECT' || type === 'MULTIPLY_SELECT' || type === 'DROP_DOWN';
+}
+
+module.exports = {
+  getProblemTypeChineseName: getProblemTypeChineseName,
+  isShowOptions: isShowOptions,
+  getDataDict: getDataDict
+};

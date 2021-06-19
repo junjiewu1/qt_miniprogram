@@ -1,0 +1,2 @@
+<!--components/ad/banner.wxml-->
+<image src="{{image}}" class="ad" bindtap="clickAd"></image>

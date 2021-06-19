@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "item-card": "/pages/manage/childCmp/itemCard/itemCard",
+    "top-bar": "/components/topBar/topBar",
+    "i-icon": "/components/iViewUi/icon/index",
+    "i-action-sheet": "/components/iViewUi/action-sheet/index",
+    "better-tab-bar": "/components/betterTabBar/betterTabBar",
+    "i-message": "/components/iViewUi/message/index",
+    "i-modal": "/components/iViewUi/modal/index",
+    "i-button": "/components/iViewUi/button/index",
+    "bottom-message": "/components/bottomMessage/bottomMessage",
+    "van-share-sheet": "/components/share-sheet/index"
+  }
+}

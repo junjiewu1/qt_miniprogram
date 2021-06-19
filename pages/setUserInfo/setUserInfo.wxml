@@ -1,0 +1,11 @@
+
+
+<image src="../../assets/image/welcome.png" class="loginImg">
+  
+</image>
+<view class="userinfo">
+    <block>
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 微信登陆 </button>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信登陆 </button>
+    </block>
+  </view>

@@ -1,0 +1,36 @@
+<!--pages/manage/templates.wxml-->
+<view class="templates-head">
+  <van-search value="" placeholder="请输入搜索关键词" bind:change="keywordChange" bind:clear="keywordClear" bind:search="keywordSearch"/>
+</view>
+
+<view class="content">
+  <view class="content-item" bindtap="addClick">
+    <image src="/assets/image/new.png" class="addImage" ></image>
+    <view>从空白创建</view>
+  </view>
+  <view class="content-item"  bindtap="openDialog">
+    <!-- <image src="/assets/image/excel.png" class="addImage" ></image> -->
+    <view style="line-height: 240rpx;">导入文件创建</view>
+  </view>
+</view>
+<view style="padding-left:20rpx;">从模板创建</view>
+<view id="item-card-wrap">
+  <view wx:for="{{questionnaires}}"
+                  wx:key="questionnaireId"
+                  bind:tap="itemClick"
+                  data-qid="{{item.questionnaireId}}"
+                  data-index="{{index}}">
+                <item-card title="{{item.title}}"
+                           condition="{{item.condition}}">
+                </item-card>
+  </view>
+</view>
+ <van-dialog  use-slot  show="{{dialogShow}}" title="从excel创建" bind:confirm="availableNumChange">
+          <view  class="excelDialog">
+            <button bindtap="downClick" size="mini" type="primary">下载模板</button>
+            <button bindtap="importClick" size="mini" type="primary">导入模板</button>
+          </view>
+  </van-dialog>
+  <i-message id="message"></i-message>
+  
+        

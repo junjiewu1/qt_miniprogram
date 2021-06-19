@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/manage/manage",
+    "pages/downloadfile/downloadfile",
+
+    "pages/complete/complete",
+    "pages/review/review",
+    "pages/questionnaire/questionnaire",
+    "pages/profile/profile",
+    "pages/basicEdition/basicEdition",
+    "pages/basicInfoEdition/basicInfoEdition",
+    "pages/problemEdition/problemEdition",
+    "pages/problemEdition/childCmp/optionCard/optionCard",
+    "pages/setUserInfo/setUserInfo",
+    "pages/success/success",
+    "pages/analysis/analysis",
+    "pages/detailedAnalysis/detailedAnalysis",
+    "pages/templates/templates",
+    "pages/auth/login",
+    "pages/analysis/users"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "云中问卷",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default"
+  },
+  "sitemapLocation": "sitemap.json"
+}

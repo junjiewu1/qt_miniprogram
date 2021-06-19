@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "i-icon": "/components/iViewUi/icon/index",
+    "base-card": "/components/baseCard/baseCard",
+    "i-tag": "/components/iViewUi/tag/index"
+  }
+}

@@ -1,0 +1,38 @@
+<view id="basic-info-edition">
+    <i-message id="message"></i-message>
+
+
+    <view class="basic-info-edition-title">
+        问卷标题
+    </view>
+
+
+    <view class="title-input-container">
+        <i-input value="{{title}}"
+                 type="textarea"
+                 bind:change="titleChange"
+                 placeholder="请创建一个标题"
+                 >
+        </i-input>
+    </view>
+
+    <view class="basic-info-edition-title">
+        问卷副标题
+    </view>
+
+    <view class="title-input-container">
+        <i-input value="{{subTitle}}"
+                 type="textarea"
+                 bind:change="subTitleChange"
+                 placeholder="创建一个副标题"
+                 >
+        </i-input>
+    </view>
+
+    <view class="save-button-wrap">
+        <i-button bind:tap="editQuestionnaireBasicInfo" type="primary">
+            保存
+        </i-button>
+    </view>
+
+</view>

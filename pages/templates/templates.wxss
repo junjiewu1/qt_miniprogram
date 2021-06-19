@@ -1,0 +1,61 @@
+/* pages/manage/templates.wxss */
+page{
+  background-color: #F5F6FA
+}
+.templates-head{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+.k1{
+  display: flex;
+  flex-direction: column;
+  height: 150rpx;
+  width: 150rpx;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20rpx;
+}
+
+.text1{
+  font-size: 24rpx;
+}
+
+.t1{
+  display: flex;
+  align-self: center;
+  height: 150rpx;
+  width: 150rpx;
+  background-color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 730rpx;
+  margin: 10px auto;
+}
+.content-item{
+  width: 335rpx;
+  height: 240rpx;
+  margin: 15rpx 15rpx;
+  background-color: white;
+  text-align: center;
+}
+.addImage{
+  margin-top: 60rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+#item-card-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.excelDialog{
+  width: 70%;
+  margin:30rpx auto;
+  display:flex;
+  justify-content: space-around;
+}

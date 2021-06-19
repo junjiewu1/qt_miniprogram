@@ -1,0 +1,65 @@
+page {
+    background-color: #F5F6FA
+}
+
+.complete-top-info {
+    padding-left: 30rpx;
+    padding-top: 40rpx;
+    color: #86878B;
+    font-size: 40rpx;
+    text-align: center;
+}
+
+.complete-summary-info {
+    padding-left: 30rpx;
+    padding-top: 40rpx;
+    color: #86878B;
+    font-size: 25rpx;
+    text-align: left;
+}
+.mytitle{
+   display: inline;
+}
+.check-secret-input {
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    padding-top: 30rpx;
+}
+
+.check-secret-button-wrap {
+    padding-top: 30rpx;
+}
+
+.basic-info-container {
+    padding-top: 30rpx;
+}
+
+.complete-card-items {
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    padding-top: 30rpx;
+}
+
+.complete-card-items-single-select, .complete-card-items-multiply-select {
+    padding-top: 20rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.complete-card-items-single-select-items, .complete-card-items-multiply-select-items {
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+}
+
+.save-button-wrap {
+    height: 10vh;
+    padding-top: 10rpx;
+    background-color: white;
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+    bottom: 0;
+}
+.complete-form-container{
+    padding-bottom: 13vh;
+}

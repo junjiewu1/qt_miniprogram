@@ -1,0 +1,2 @@
+
+<button open-type="getPhoneNumber" style="background-color: #4c5870;color: #ffffff;margin: 20px;border-radius:0px" bindgetphonenumber="getPhoneNumber">手机号授权</button>

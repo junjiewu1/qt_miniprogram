@@ -1,0 +1,53 @@
+page {
+    background-color: #F5F6FA
+}
+
+.questionnaire-title {
+    padding-left: 30rpx;
+    padding-top: 30rpx;
+    color: #86878B;
+    font-size: 25rpx;
+}
+
+.problem-title-container {
+    padding-left: 30rpx;
+    padding-top: 30rpx;
+    padding-right: 30rpx;
+}
+
+.options-container {
+    padding-top: 20rpx;
+}
+
+.add-one-option-tag {
+    text-align: center;
+    color: #368DFF;
+}
+
+.setting-text {
+    padding-left: 20rpx;
+    font-size: 30rpx;
+}
+
+.setting-container {
+    padding-top: 30rpx;
+}
+
+.save-button-wrap {
+    height: 10vh;
+    padding-top: 10rpx;
+    background-color: white;
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+    bottom: 0;
+}
+
+.problem-edition-head{
+    padding-bottom: 12vh;
+}
+
+.optionsCard-hasright{
+    display: flex !important;
+    
+}

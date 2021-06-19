@@ -1,0 +1,10 @@
+<!--pages/downloadfile/downloadfile.wxml-->
+
+		<view style="text-align: center; font-size: 28rpx; color: #5e5e5e;margin-top:60rpx">点击下方按钮，复制到浏览器中下载</view>
+		<view wx:for="{{a}}" wx:key="index" style="text-align:center; margin-top:20rpx">
+			<button type="primary" bind:tap="copylink"  data-type='{{item}}' size="mini" style=" margin: 10rpx auto 20rpx auto;">{{item}}</button>
+		</view>
+		<view style="text-align: center; font-size: 28rpx; color: #5e5e5e; margin-top: 40rpx;">点击下方按钮，直接下载文件(仅安卓可用)</view>
+		<view wx:for="{{a}}" wx:key="index" style="text-align:center;margin-top:20rpx">
+			<button type="primary" bind:tap="downExcelTemplate"  data-type='{{item}}' size="mini" style=" margin: 10rpx auto 20rpx auto;">{{item}}</button>
+		</view>

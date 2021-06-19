@@ -1,0 +1,58 @@
+<view id="questionnnaire">
+    <wxs src="../../wxs/common.wxs" module="common"></wxs>
+    <i-message id="message"></i-message>
+    <view class="questionnaire-title">标题与描述</view>
+
+    <view class="basic-info-container">
+        <basic-info title="{{basicInfo.title}}"
+                    subTitle="{{basicInfo.subTitle}}"
+                    questionnaireId="{{qid}}"
+                    showEditionButtion>
+        </basic-info>
+    </view>
+    
+    <view class="questionnaire-a">
+    <view class="aaa">问题</view>
+    <view class="wjst" bindtap="settingClick">问卷设置<image src="../../assets/image/iconmonstr-arrow.png" class="rightClass"></image></view>
+    </view>
+    <view class="problems-container">
+        <view class="problems-container-items" wx:for="{{problems}}" wx:key="index">
+            <problem-card problem="{{item}}"
+                          number="{{index}}">
+                <view slot="card-head">
+                    <i-tag class="i-tags" name="problem-type" color="blue">
+                        {{common.getProblemTypeChineseName(item.type)}}
+                    </i-tag>
+                </view>
+            </problem-card>
+        </view>
+
+        <view class="problems-container-add-problem">
+            <problem-card onlyShowTitle>
+                <view class="add-problem-message">
+
+                    <view class="add-problem-message-text" bind:tap="readyAppendProblem">
+                        + 添加一个问题
+                    </view>
+                </view>
+            </problem-card>
+        </view>
+    </view>
+    
+    <i-action-sheet visible="{{actionSheetVisible}}"
+                    actions="{{appProblemOperation}}"
+                    show-cancel
+                    bind:click="handleClickItem"
+                    bind:cancel="actionSheetCancel" class="action-sheet-in-manage">
+        <view slot="header" style="padding: 16px">
+            <text>请选择你要添加题目的类型</text>
+        </view>
+    </i-action-sheet>
+    <i-button type="primary" bind:click="importAnswer">
+            上传标准答案
+    </i-button>
+    <i-button type="primary" bind:click="preview">
+            预览
+    </i-button>
+    <button bindtap="get_qrcode" style="margin:30rpx 20rpx 60rpx 20rpx;" type="primary">下载二维码</button>
+</view>

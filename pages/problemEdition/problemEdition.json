@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "i-input": "/components/iViewUi/input/index",
+    "i-button": "/components/iViewUi/button/index",
+    "i-icon": "/components/iViewUi/icon/index",
+    "i-modal": "/components/iViewUi/modal/index",
+    "option-card": "/pages/problemEdition/childCmp/optionCard/optionCard",
+    "base-card": "/components/baseCard/baseCard",
+    "i-message": "/components/iViewUi/message/index", 
+    "i-tag": "/components/iViewUi/tag/index",
+    
+    "i-action-sheet": "/components/iViewUi/action-sheet/index"
+   
+  }
+}

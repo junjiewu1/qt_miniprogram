@@ -1,0 +1,29 @@
+/* pages/analysis/users.wxss */
+.mysection{
+  font-size: 26rpx;
+  margin: 20rpx;
+  color: #565656;
+  font-weight: 600;
+}
+page {
+  background-color: #F5F6FA
+}
+.usersList{
+  width: 730rpx;
+  margin: 10rpx;
+  display: flex;
+	flex-wrap: wrap;
+}
+.usersListItem{
+    font-size: 26rpx;
+    width: 158rpx;
+    text-align: center;
+    line-height: 60rpx;
+    padding: 0 4rpx;
+    color: #585858;
+    background-color: #FFFFFF;
+    margin: 4rpx 9rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

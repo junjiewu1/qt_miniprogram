@@ -1,0 +1,12 @@
+.problem-card {
+    background-color: white;
+    /* 和上方文字对齐*/
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+}
+
+.problem-card-items {
+    display: flex;
+    padding: 25rpx;
+}
+

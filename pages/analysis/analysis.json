@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "basic-info": "/components/basicInfo/basicInfo",
+    "my-table": "/components/my-table/my-table",
+    "i-message": "/components/iViewUi/message/index",
+    "bottom-message": "/components/bottomMessage/bottomMessage",
+    "ec-canvas": "../../components/charts/ec-canvas/ec-canvas"
+  }
+}

@@ -1,0 +1,31 @@
+.success-title {
+    text-align: center;
+    padding-top: 8vh;
+    font-size: 50rpx;
+}
+
+.github-img {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+
+.github-img-wrap {
+    position: fixed;
+    bottom: 3vh;
+    left: 0;
+    right: 0;
+    font-size: 38rpx;
+}
+
+.back-button{
+    margin-top: 8vh;
+    width: 50vw;
+}
+.checkup-button{
+    margin-top: 3vh;
+    width: 50vw;
+}
+.adContainer {
+    width: 100%;
+  }

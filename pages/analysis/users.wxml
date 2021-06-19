@@ -1,0 +1,15 @@
+<!--pages/analysis/users.wxml-->
+<view>
+  <text class="mysection">| 已完成群成员：</text>
+  <view wx:if="{{tagged.length}}" class="usersList">
+    <view wx:for="{{tagged}}" wx:key="index"  class="usersListItem">{{item}}</view>
+  </view>
+  <view wx:else style="text-align: center; color: #7c7c7c;line-height: 100rpx; font-size: 30rpx;" >暂时还没有信息~</view>
+</view>
+<view>
+  <text class="mysection">| 未完成群成员：</text>
+  <view wx:if="{{untagged.length}}" class="usersList">
+    <view wx:for="{{untagged}}" wx:key="index"  class="usersListItem">{{item}}</view>
+  </view>
+  <view wx:else style="text-align: center; color: #7c7c7c;line-height: 100rpx; font-size: 30rpx;" >暂时还没有信息~</view>
+</view>

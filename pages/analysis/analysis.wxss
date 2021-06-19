@@ -1,0 +1,42 @@
+.resolution-items{
+    justify-content: center;
+    padding-left: 5vw;
+    padding-top: 40px;
+    width: 90vw;
+}
+
+.resolution-items-title{
+    font-size: 28rpx;
+    padding-bottom: 20rpx;
+}
+
+.bottom-message{
+    padding-top: 50px;
+}
+
+.show-detail-text{
+    color: #51B7CA;
+} 
+.analysis-userinfo{
+    width: 690rpx;
+    margin: 0 auto;
+}
+.userinfo-avatarUrl{
+    width: 99rpx;
+    height: 99rpx;
+    margin: 4px 8rpx;
+    border-radius: 50%;
+}
+.analysis-text{
+    margin-left: 8rpx;
+    font-size: small;
+    color: #86878B;
+    margin-bottom: 10px;
+}
+
+
+ec-canvas {
+    width: 700rpx;
+    height: 400rpx;
+    margin: 0 auto 40rpx auto;
+  }

@@ -1,0 +1,60 @@
+<view class="manage">
+    <i-message id="message"></i-message>
+
+    <i-modal visible="{{ confirmSpreadVisiable }}"
+             bind:ok="confirmSpread"
+             bind:cancel="cancalSpread">
+        <view>是否{{activeQuestionnaire.condition ? "取消": ""}}发布?</view>
+    </i-modal>
+
+    <view id="manage">
+        <view wx:if="{{m_userInfo}}" class="my-top-bar" >
+            <view class="top-bar">
+                <image class="uzeravatarUrl" src="{{m_userInfo.avatarUrl}}"></image>
+                <view class="top-bar-textInfo">
+                    <view>{{m_userInfo.nickName}}</view>
+                    <view class="secondenText">已创建 {{questionnaires.length}} 条</view>
+                </view>
+            </view>
+            <view class="btnView">
+                <button size="mini" class="addBtn" bindtap="addClick">创建</button>
+            </view>
+            
+        </view>
+        <view  class="my-top-bar" wx:else>
+            <view class="top-bar">
+                <image class="uzeravatarUrl" src="../../assets/image/toux.png"></image>
+                <view class="top-bar-textInfo">
+                    <view>未知</view>
+                    <view class="secondenText">已创建 {{questionnaires.length}} 条</view>
+                </view>
+            </view>
+            <view class="btnView">
+            <button size="mini" class="addBtn" bindtap="getuserInfoClick">微信登陆</button>
+            <button size="mini" class="addBtn" bindtap="addClick">创建</button> 
+            </view>
+        </view>
+    
+        <view id="item-card-wrap">
+            <view wx:for="{{questionnaires}}"
+                  wx:key="questionnaireId"
+                  bind:tap="itemClick"
+                  data-qid="{{item.questionnaireId}}"
+                  data-index="{{index}}">
+                <item-card title="{{item.title}}"
+                           condition="{{item.condition}}">
+                </item-card>
+            </view>
+        </view>
+    </view>
+
+    <van-share-sheet
+  show="{{ showShare }}"
+  title="{{activeQuestionnaire.title}}"
+  options="{{questionnaireOperation }}"
+  bind:select="handleClickItem"
+  bind:close="onClose"
+    />
+    <bottom-message></bottom-message>
+   
+</view>

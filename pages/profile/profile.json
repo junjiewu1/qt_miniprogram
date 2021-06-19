@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "better-tab-bar": "/components/betterTabBar/betterTabBar"
+  }
+}

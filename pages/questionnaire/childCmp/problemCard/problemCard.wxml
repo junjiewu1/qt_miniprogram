@@ -1,0 +1,25 @@
+<view class="problem-card">
+    <wxs src="../../../../wxs/common.wxs" module="common"></wxs>
+    <base-card>
+        <view slot="base-card-head">
+            <i-tag class="i-tags" name="problem-type"
+                   color="blue" wx-if="{{!onlyShowTitle}}">
+                {{common.getProblemTypeChineseName(problem.type)}}
+            </i-tag>
+        </view>
+
+        <view slot="base-card-body">
+            {{onlyShowTitle ? '' : (problem.title=='' ? ' 请输入问题':number + 1 + '. '+ problem.title)}}
+            <slot></slot>
+        </view>
+
+        <view slot="base-card-tail">
+            <view bind:tap="gotoEditPrblem">
+                <i-icon type="brush" size="20"
+                        wx-if="{{!onlyShowTitle}}">
+                </i-icon>
+        </view>
+
+        </view>
+    </base-card>
+</view>

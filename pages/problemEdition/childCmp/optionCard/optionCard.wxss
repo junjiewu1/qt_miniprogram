@@ -1,0 +1,33 @@
+.option-head-icon-wrap{
+    padding-left: 15rpx;
+    padding-top: 20rpx;
+}
+.option-input-wrap{
+    width: 600rpx;
+}
+
+.problem-card-items {
+    display: flex;
+    padding: 25rpx;
+}
+.base-card-aaa{
+    position: relative;
+}
+
+.option-tail-icon{
+    position: absolute;
+    z-index: 2;
+    left: 620rpx;
+    top: 36rpx;
+}
+
+
+.switch{
+    margin: 20px 0;
+    margin-left: 100rpx;
+}
+.switchInput{
+    width: 80%;
+    margin: 0 auto 20px auto;
+    height: 20px;
+}

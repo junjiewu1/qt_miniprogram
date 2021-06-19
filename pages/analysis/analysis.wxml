@@ -1,0 +1,53 @@
+
+<view class="analysis">
+    <i-message id="message"></i-message>
+    <wxs src="../../wxs/common.wxs" module="common"></wxs>
+    <basic-info title="{{basicInfo.title}}"
+                subTitle="{{'当前收集到的问卷数目:' + basicInfo.totalComplete}}"
+                showEditionButtion="{{false}}">
+    </basic-info>
+    
+    <view class="analysis-userinfo" wx:if="{{isAdmin}}">
+        <view>
+        <image wx:for="{{Analysisuserinfo}}" wx:key="index" src="{{item.avatarUrl}}" class="userinfo-avatarUrl"></image>
+        </view>
+        <view bindtap="showDetail">群成员匹配</view>
+    </view>
+
+    
+
+
+    <view class="resolution-container">
+        <view class="resolution-items" wx:for="{{resolutions}}" wx:key="item">
+            <view class="container">
+                <view class="resolution-items-title">{{item.title}}
+                    <text decode class="show-detail-text"
+                        bind:tap="gotoDetailedAnalysis"
+                        wx:if="{{item.type === 'BLANK_FILL'}}"
+                        data-problemId="{{item.problemId}}">&nbsp;&nbsp;&nbsp;&nbsp;查看详细
+                    </text>
+                </view>
+                <ec-canvas wx:if="{{item.type === 'SINGLE_SELECT' || item.type === 'MULTIPLY_SELECT'}}" id="mychart{{index}}" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+                <my-table wx:if="{{item.type === 'SINGLE_SELECT' || item.type === 'MULTIPLY_SELECT'}}"
+                        column="{{tableColumn}}"
+                        row="{{item.resolution}}" showTable>
+                </my-table>
+
+                <my-table wx:if="{{item.type === 'SCORE'}}"
+                        column="{{tableColumnForScore}}"
+                        row="{{item.resolution}}" showTable>
+                </my-table>
+
+                <my-table wx:if="{{item.type === 'BLANK_FILL'}}"
+                        showTable="{{false}}">
+                </my-table>
+            </view>
+        </view>
+    </view>
+    <block wx:if="{{isAdmin}}">
+    <button bindtap="exportStats">导出统计</button>
+    <button bindtap="exportResults">导出明细</button>
+    </block>
+    
+    <bottom-message></bottom-message>
+</view>

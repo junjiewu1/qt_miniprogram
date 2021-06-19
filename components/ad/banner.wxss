@@ -1,0 +1,7 @@
+/* components/ad/banner.wxss */
+.ad{
+  align-items: center;
+  align-content: center;
+  width: 705rpx;
+  height: 300rpx;
+}

@@ -1,0 +1,8 @@
+<view>
+    <view class="item-card">
+        <view class="item-card-title">
+            {{title}}
+        </view>
+        <view class="item-card-tail"></view>
+    </view>
+</view>

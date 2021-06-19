@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "uad" : "/components/ad/banner"
+  }
+}

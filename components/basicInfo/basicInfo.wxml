@@ -1,0 +1,15 @@
+<view class="basic-info">
+    <view class="basic-info-wrap">
+        <view class="title-group" bind:tap="gotoEditQuestionnaireBasicInfo" wx:if="{{showEditionButtion}}">
+            <view class="basic-info-title">{{title==""? '请创建一个标题':title}}</view>
+            <view class="basic-info-subtitle">{{subTitle==""? '创建一个副标题':subTitle}}</view>
+        </view>
+        <view class="title-group"  wx:if="{{!showEditionButtion}}">
+            <view class="basic-info-title">{{title==""? '请创建一个标题':title}}</view>
+            <view class="basic-info-subtitle" wx:if="{{subTitle}}"><text>{{subTitle}}</text></view>
+        </view>
+        <view class="edit-button-wrap" wx:if="{{showEditionButtion}}">
+            <text bind:tap="gotoEditQuestionnaireBasicInfo">编辑</text>
+        </view>
+    </view>
+</view>

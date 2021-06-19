@@ -1,0 +1,80 @@
+page {
+    background-color: #F5F6FA
+}
+
+
+.menu-icon-button {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-icon-button-hover {
+    background-color: #F5F6FA;
+}
+
+#item-card-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.action-sheet-in-manage {
+    background-color: white;
+}
+
+
+.manage {
+    padding-bottom: 5vh;
+}
+.top-bar {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.uzeravatarUrl{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+.top-bar-textInfo{
+    margin-left: 10px;
+}
+.secondenText{
+    font-size: small;
+    color: rgb(110, 110, 110);
+    margin-top: 2px;
+}
+
+.addBtn{
+    background-color: rgb(92, 184, 92);
+    color: white;
+    margin: 0 2px;
+}
+.btnView{
+    margin-right: 20px;
+}
+
+.van-share-sheet__icon{
+    text-align: center;
+    align-items: center;
+    width: 24px !important;
+    height: 24px !important;
+}
+.van-share-sheet__options{
+    flex-wrap: wrap;
+    padding-top: 0px !important;
+}
+.van-share-sheet__option{
+    margin-top: 16px;
+    width: 25%;
+}
+.my-top-bar{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}

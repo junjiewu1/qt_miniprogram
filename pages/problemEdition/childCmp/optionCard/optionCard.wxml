@@ -1,0 +1,34 @@
+<view class="option-card">
+    <base-card widthByVw="8" class="base-card-aaa">
+        <!-- 删除标记-->
+        <view slot="base-card-head">
+            <view class="option-head-icon-wrap" wx:if="{{!onlyShowTitle}}">
+                <i-icon type="offline"
+                        size="24"
+                        color="red"
+                        data-index="{{index}}"
+                        bindtap="iconClick"
+                        >
+                </i-icon>
+            </view>
+        </view>
+
+        <!-- 选项标题-->
+        <view slot="base-card-body">
+            <view class="option-input-wrap" wx:if="{{!onlyShowTitle}}">
+                <i-input type="textarea" value="{{title}}"  bind:change="optionsChange" ></i-input>
+            </view>
+            <slot></slot>
+        </view>
+
+        <view slot="base-card-tail" class="option-tail-icon"  >
+            <view  wx:if="{{type == 'SINGLE_SELECT'}}">
+                <image src="/assets/image/iconmonstr-arrow.png" style="width:30rpx; height:30rpx; padding:30rpx"  bindtap="rightTap" />
+            </view>
+        </view>
+    </base-card>
+    <van-dialog  use-slot title="数量限制" show="{{dialogShow}}"  bind:confirm="availableNumChange">
+            <switch checked='{{ischecked}}'  bindchange="switchChange"  class="switch">是否限制填写次数</switch>
+            <input type="number"  placeholder="请填写"  wx-if="{{ischecked}}"  class="switchInput"  value='{{availableNum}}'  bindinput="switchInputChange" />
+        </van-dialog>
+</view>
